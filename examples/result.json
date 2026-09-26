@@ -1,0 +1,256 @@
+{
+  "as_of_utc": "2026-09-26T04:00:00+00:00",
+  "window_days": 30,
+  "status": "RED",
+  "groups": [
+    {
+      "group_id": "group-25",
+      "module_id": "module-7",
+      "status": "RED",
+      "metrics": {
+        "review_hours": {
+          "status": "RED",
+          "value": 51.0,
+          "unit": "h",
+          "sample_size": 2,
+          "reason": "Среднее время проверки ДЗ",
+          "action": "notify_mentor_and_escalate_to_lead_mentor"
+        },
+        "first_attempt_pass_pct": {
+          "status": "RED",
+          "value": 25.0,
+          "unit": "%",
+          "sample_size": 4,
+          "reason": "Доля успешных первых попыток авто-теста",
+          "action": "flag_material_for_revision_and_alert_methodologist"
+        },
+        "activity_gap_hours": {
+          "status": "RED",
+          "value": 139.0,
+          "unit": "h",
+          "sample_size": 4,
+          "reason": "Максимальная пауза активности среди студентов",
+          "student_gap_hours": {
+            "student-a": 16.0,
+            "student-b": 100.0,
+            "student-c": 52.0,
+            "student-d": 139.0
+          },
+          "action": "queue_personal_nudge"
+        },
+        "support_hours": {
+          "status": "YELLOW",
+          "value": 4.0,
+          "unit": "h",
+          "sample_size": 2,
+          "reason": "Среднее время ответа и открытые обращения",
+          "overdue_ticket_ids": [],
+          "waiting_ticket_ids": [],
+          "action": null
+        }
+      },
+      "violations": [
+        "review_hours: Среднее время проверки ДЗ = 51.0 h (RED)",
+        "first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 25.0 % (RED)",
+        "activity_gap_hours: Максимальная пауза активности среди студентов = 139.0 h (RED)"
+      ],
+      "students": {
+        "student-a": {
+          "status": "YELLOW",
+          "metrics": {
+            "review_hours": {
+              "status": "YELLOW",
+              "value": 30.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Среднее время проверки ДЗ",
+              "action": null
+            },
+            "first_attempt_pass_pct": {
+              "status": "GREEN",
+              "value": 100.0,
+              "unit": "%",
+              "sample_size": 1,
+              "reason": "Доля успешных первых попыток авто-теста",
+              "action": null
+            },
+            "activity_gap_hours": {
+              "status": "GREEN",
+              "value": 16.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Максимальная пауза активности среди студентов",
+              "student_gap_hours": {
+                "student-a": 16.0
+              },
+              "action": null
+            },
+            "support_hours": {
+              "status": "GREEN",
+              "value": 1.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Среднее время ответа и открытые обращения",
+              "overdue_ticket_ids": [],
+              "waiting_ticket_ids": [],
+              "action": null
+            }
+          },
+          "violations": []
+        },
+        "student-b": {
+          "status": "RED",
+          "metrics": {
+            "review_hours": {
+              "status": "RED",
+              "value": 72.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Среднее время проверки ДЗ",
+              "action": "notify_mentor_and_escalate_to_lead_mentor"
+            },
+            "first_attempt_pass_pct": {
+              "status": "RED",
+              "value": 0.0,
+              "unit": "%",
+              "sample_size": 1,
+              "reason": "Доля успешных первых попыток авто-теста",
+              "action": "flag_material_for_revision_and_alert_methodologist"
+            },
+            "activity_gap_hours": {
+              "status": "RED",
+              "value": 100.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Максимальная пауза активности среди студентов",
+              "student_gap_hours": {
+                "student-b": 100.0
+              },
+              "action": "queue_personal_nudge"
+            },
+            "support_hours": {
+              "status": "RED",
+              "value": 7.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Среднее время ответа и открытые обращения",
+              "overdue_ticket_ids": [],
+              "waiting_ticket_ids": [],
+              "action": "suggest_faq_and_prioritize_ticket"
+            }
+          },
+          "violations": [
+            "review_hours: Среднее время проверки ДЗ = 72.0 h (RED)",
+            "first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 0.0 % (RED)",
+            "activity_gap_hours: Максимальная пауза активности среди студентов = 100.0 h (RED)",
+            "support_hours: Среднее время ответа и открытые обращения = 7.0 h (RED)"
+          ]
+        },
+        "student-c": {
+          "status": "RED",
+          "metrics": {
+            "review_hours": {
+              "status": "YELLOW",
+              "value": null,
+              "unit": "h",
+              "sample_size": 0,
+              "reason": "Нет завершённых проверок ДЗ в окне наблюдения",
+              "action": null
+            },
+            "first_attempt_pass_pct": {
+              "status": "RED",
+              "value": 0.0,
+              "unit": "%",
+              "sample_size": 1,
+              "reason": "Доля успешных первых попыток авто-теста",
+              "action": "flag_material_for_revision_and_alert_methodologist"
+            },
+            "activity_gap_hours": {
+              "status": "YELLOW",
+              "value": 52.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Максимальная пауза активности среди студентов",
+              "student_gap_hours": {
+                "student-c": 52.0
+              },
+              "action": null
+            },
+            "support_hours": {
+              "status": "YELLOW",
+              "value": null,
+              "unit": "h",
+              "sample_size": 0,
+              "reason": "Нет обращений в поддержку в окне наблюдения",
+              "overdue_ticket_ids": [],
+              "waiting_ticket_ids": [],
+              "action": null
+            }
+          },
+          "violations": [
+            "first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 0.0 % (RED)"
+          ]
+        },
+        "student-d": {
+          "status": "RED",
+          "metrics": {
+            "review_hours": {
+              "status": "YELLOW",
+              "value": null,
+              "unit": "h",
+              "sample_size": 0,
+              "reason": "Нет завершённых проверок ДЗ в окне наблюдения",
+              "action": null
+            },
+            "first_attempt_pass_pct": {
+              "status": "RED",
+              "value": 0.0,
+              "unit": "%",
+              "sample_size": 1,
+              "reason": "Доля успешных первых попыток авто-теста",
+              "action": "flag_material_for_revision_and_alert_methodologist"
+            },
+            "activity_gap_hours": {
+              "status": "RED",
+              "value": 139.0,
+              "unit": "h",
+              "sample_size": 1,
+              "reason": "Максимальная пауза активности среди студентов",
+              "student_gap_hours": {
+                "student-d": 139.0
+              },
+              "action": "queue_personal_nudge"
+            },
+            "support_hours": {
+              "status": "YELLOW",
+              "value": null,
+              "unit": "h",
+              "sample_size": 0,
+              "reason": "Нет обращений в поддержку в окне наблюдения",
+              "overdue_ticket_ids": [],
+              "waiting_ticket_ids": [],
+              "action": null
+            }
+          },
+          "violations": [
+            "first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 0.0 % (RED)",
+            "activity_gap_hours: Максимальная пауза активности среди студентов = 139.0 h (RED)"
+          ]
+        }
+      }
+    }
+  ],
+  "modules": {
+    "module-7": {
+      "groups": [
+        "group-25"
+      ],
+      "status": "RED"
+    }
+  },
+  "input_stats": {
+    "read": 21,
+    "duplicates_ignored": 1,
+    "future_ignored": 0
+  }
+}

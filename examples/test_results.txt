@@ -1,0 +1,34 @@
+test_green_within_daily_window (test_quality_monitor.ActivityGateTests.test_green_within_daily_window) ... ok
+test_red_at_three_days (test_quality_monitor.ActivityGateTests.test_red_at_three_days) ... ok
+test_yellow_after_one_day (test_quality_monitor.ActivityGateTests.test_yellow_after_one_day) ... ok
+test_green_above_70_percent (test_quality_monitor.FirstAttemptGateTests.test_green_above_70_percent) ... ok
+test_red_below_40_percent (test_quality_monitor.FirstAttemptGateTests.test_red_below_40_percent) ... ok
+test_yellow_at_target_and_critical (test_quality_monitor.FirstAttemptGateTests.test_yellow_at_target_and_critical) ... ok
+test_activity_before_assignment_does_not_count (test_quality_monitor.PipelineTests.test_activity_before_assignment_does_not_count) ... ok
+test_bad_timezone_rejected (test_quality_monitor.PipelineTests.test_bad_timezone_rejected) ... ok
+test_conflicting_duplicate_event_rejected (test_quality_monitor.PipelineTests.test_conflicting_duplicate_event_rejected) ... ok
+test_example_metrics_and_input_deduplication (test_quality_monitor.PipelineTests.test_example_metrics_and_input_deduplication) ... group-25/module-7: review_hours: Среднее время проверки ДЗ = 51.0 h (RED)
+group-25/module-7: first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 25.0 % (RED)
+group-25/module-7: activity_gap_hours: Максимальная пауза активности среди студентов = 139.0 h (RED)
+ok
+test_first_attempt_deduplicated_by_business_key (test_quality_monitor.PipelineTests.test_first_attempt_deduplicated_by_business_key) ... ok
+test_future_event_ignored (test_quality_monitor.PipelineTests.test_future_event_ignored) ... future event ignored: a
+ok
+test_group_module_filter_and_aggregation (test_quality_monitor.PipelineTests.test_group_module_filter_and_aggregation) ... ok
+test_identical_duplicate_event_ignored (test_quality_monitor.PipelineTests.test_identical_duplicate_event_ignored) ... ok
+test_invalid_threshold_config_rejected (test_quality_monitor.PipelineTests.test_invalid_threshold_config_rejected) ... ok
+test_no_data_is_yellow_not_green (test_quality_monitor.PipelineTests.test_no_data_is_yellow_not_green) ... ok
+test_unanswered_ticket_over_six_hours_is_red (test_quality_monitor.PipelineTests.test_unanswered_ticket_over_six_hours_is_red) ... ok
+test_unanswered_ticket_under_six_hours_is_yellow (test_quality_monitor.PipelineTests.test_unanswered_ticket_under_six_hours_is_yellow) ... ok
+test_zero_duration_review_is_valid_green (test_quality_monitor.PipelineTests.test_zero_duration_review_is_valid_green) ... ok
+test_green_below_24_hours (test_quality_monitor.ReviewGateTests.test_green_below_24_hours) ... ok
+test_red_above_48_hours (test_quality_monitor.ReviewGateTests.test_red_above_48_hours) ... ok
+test_yellow_at_target_and_critical (test_quality_monitor.ReviewGateTests.test_yellow_at_target_and_critical) ... ok
+test_green_below_two_hours (test_quality_monitor.SupportGateTests.test_green_below_two_hours) ... ok
+test_red_above_six_hours (test_quality_monitor.SupportGateTests.test_red_above_six_hours) ... ok
+test_yellow_at_target_and_critical (test_quality_monitor.SupportGateTests.test_yellow_at_target_and_critical) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.005s
+
+OK

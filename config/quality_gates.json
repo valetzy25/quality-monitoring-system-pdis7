@@ -1,0 +1,26 @@
+{
+  "window_days": 30,
+  "gates": {
+    "review_hours": {
+      "target_lt": 24,
+      "critical_gt": 48,
+      "red_action": "notify_mentor_and_escalate_to_lead_mentor"
+    },
+    "first_attempt_pass_pct": {
+      "target_gt": 70,
+      "critical_lt": 40,
+      "red_action": "flag_material_for_revision_and_alert_methodologist"
+    },
+    "activity_gap_hours": {
+      "target_max": 24,
+      "critical_min": 72,
+      "red_action": "queue_personal_nudge"
+    },
+    "support_hours": {
+      "target_lt": 2,
+      "critical_gt": 6,
+      "red_action": "suggest_faq_and_prioritize_ticket"
+    }
+  }
+}
+

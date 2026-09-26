@@ -1,0 +1,14 @@
+WARNING group-25/module-7: review_hours: Среднее время проверки ДЗ = 51.0 h (RED)
+WARNING group-25/module-7: first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 25.0 % (RED)
+WARNING group-25/module-7: activity_gap_hours: Максимальная пауза активности среди студентов = 139.0 h (RED)
+Оценка на 2026-09-26T04:00:00+00:00 | окно 30 дн.
+
+Группа group-25 | модуль module-7 | RED
+  Проверка ДЗ            51.0 h        RED (n=2)
+  Тест с 1-й попытки     25.0 %        RED (n=4)
+  Пауза активности       139.0 h       RED (n=4)
+  Ответ в поддержке      4.0 h         YELLOW (n=2)
+  Студенты: student-a=YELLOW, student-b=RED, student-c=RED, student-d=RED
+  Причина RED: review_hours: Среднее время проверки ДЗ = 51.0 h (RED)
+  Причина RED: first_attempt_pass_pct: Доля успешных первых попыток авто-теста = 25.0 % (RED)
+  Причина RED: activity_gap_hours: Максимальная пауза активности среди студентов = 139.0 h (RED)
